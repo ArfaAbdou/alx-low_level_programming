@@ -13,24 +13,15 @@
 
 int main(void)
 {
-/* Declare an integer variable n to store the randomly generated number*/
+
 int n;
 
 srand(time(0));
 
 n = rand();
 
-/*
-* Print a message indicating that the last
-* digit of n will be displayed next
-*/
-
 printf("Last digit of %d is ", n);
 
-/*
-*Compute the last digit of n using the modulus
-* operator and store it in a variable last_digit
-*/
 int last_digit = n % 10;
 
 if (last_digit > 5)
@@ -45,7 +36,6 @@ else
 {
 printf("%d and is less than 6 and not 0\n", last_digit);
 }
-
 
 return (0);
 }
